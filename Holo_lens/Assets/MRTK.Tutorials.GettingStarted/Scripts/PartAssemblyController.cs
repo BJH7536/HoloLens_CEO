@@ -31,7 +31,7 @@ namespace MRTK.Tutorials.GettingStarted
         private bool hasAudioSource;
         private bool hasToolTip;
 
-        private bool isPlaced;
+        public bool isPlaced;
         private bool isResetting;
 
         public bool IsPunEnabled
@@ -104,9 +104,9 @@ namespace MRTK.Tutorials.GettingStarted
 
             // Set parent and placement of object to target
             var trans = transform;
+            trans.rotation = locationToPlace.rotation;
             trans.SetParent(locationToPlace.parent);
             trans.position = locationToPlace.position;
-            trans.rotation = locationToPlace.rotation;
         }
 
         /// <summary>

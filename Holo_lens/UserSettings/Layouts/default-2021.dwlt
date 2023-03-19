@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 16
+  controlID: 110
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 80
+  controlID: 17
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 39
+  controlID: 16
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 40
+  controlID: 104
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -488,9 +488,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -141, y: 149}
+      snapOffset: {x: 101, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 0
       id: unity-grid-and-snap-toolbar
       index: 1
       layout: 1
@@ -724,9 +724,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.00013721352, y: -0.04094864, z: 0.17846027}
+    m_Target: {x: 0.0237334, y: -0.056611083, z: 0.24577695}
     speed: 2
-    m_Value: {x: 0.00013721352, y: -0.04094864, z: 0.17846027}
+    m_Value: {x: 0.0237334, y: -0.056611083, z: 0.24577695}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -771,22 +771,22 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     m_ShowGrid: 1
     m_GridAxis: 1
-    m_gridOpacity: 0.5
+    m_gridOpacity: 0.453
   m_Rotation:
-    m_Target: {x: -0.38873023, y: -0.01603427, z: 0.0067571034, w: -0.92120075}
+    m_Target: {x: -0.18771274, y: -0.14031921, z: 0.027090894, w: -0.9717866}
     speed: 2
-    m_Value: {x: -0.3887254, y: -0.01603407, z: 0.0067570196, w: -0.9211893}
+    m_Value: {x: -0.18771006, y: -0.1403172, z: 0.027090507, w: -0.97177273}
   m_Size:
-    m_Target: 0.07706149
+    m_Target: 0.08521234
     speed: 2
-    m_Value: 0.07706149
+    m_Value: 0.08521234
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 0.16919997
-    m_SpeedNormalized: 0.07999998
+    m_Speed: 0.069699995
+    m_SpeedNormalized: 0.03
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -837,7 +837,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c8b6feff882cffff7c6cffff7e96ffffb099ffffc099ffffb09affffd6a0ffff1ea1ffff7aa1ffff3caaffff84aaffffb0d7ffff02e0ffff16e8ffffe4e8ffff10f1ffffa0f1ffff2cfbffff088f00006a8f0000968f00001292000074920000a0920000d6920000
+      m_ExpandedIDs: b265fcff0c7dfcff7a81fcffa084fcffce8efdff32d4fdff46d9fdfff0dafdff36ecfdff3272feffd8b4feff2cfbffff5a6e0000806e0000986e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -902,22 +902,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MRTK.Tutorials.GettingStarted/Scripts
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/MRTK.Tutorials.GettingStarted/Scripts
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\HoloLens_CEO\Holo_lens
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 46810000
-    m_LastClickedID: 33094
-    m_ExpandedIDs: 00000000088100000a8100000c8100000e81000010810000128100001481000016810000188100001a8100001c8100001e8100000c8e000000ca9a3bffffff7f
+    m_SelectedIDs: 00730000
+    m_LastClickedID: 29440
+    m_ExpandedIDs: 0000000000730000027300000473000006730000087300000a7300000c7300000e730000107300001273000014730000167300005e73000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -945,7 +945,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000088100000a8100000c8100000e81000010810000128100001481000016810000188100001a8100001c8100001e810000
+    m_ExpandedIDs: 0000000000730000027300000473000006730000087300000a7300000c7300000e73000010730000127300001473000016730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -976,18 +976,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Prefabs
+      m_OriginalName: Prefabs
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 43410
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_CreateAssetUtility:
