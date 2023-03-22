@@ -12,5 +12,5 @@ EditorBuildSettings:
     path: Assets/Scenes/TestScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7a20900f140c9cd45a9f5e342f7e9a98, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 401a4091e98c7a84b85a31c5862edbb3, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2619f046e55087244aa1123acb504861, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b83c95a88cf11c04ea2d0722b53a4aa2, type: 2}

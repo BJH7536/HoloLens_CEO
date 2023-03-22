@@ -12,7 +12,7 @@ namespace MRTK.Tutorials.GettingStarted
         [SerializeField] private Transform locationToPlace = default;
 
         private const float MinDistance = 0.001f;
-        private const float MaxDistance = 0.01f;
+        private const float MaxDistance = 0.1f;
 
         private bool isPunEnabled;
         private bool shouldCheckPlacement;
@@ -104,9 +104,9 @@ namespace MRTK.Tutorials.GettingStarted
 
             // Set parent and placement of object to target
             var trans = transform;
-            trans.rotation = locationToPlace.rotation;
             trans.SetParent(locationToPlace.parent);
             trans.position = locationToPlace.position;
+            trans.rotation = locationToPlace.rotation;
         }
 
         /// <summary>
@@ -150,7 +150,7 @@ namespace MRTK.Tutorials.GettingStarted
         {
             while (true)
             {
-                yield return new WaitForSeconds(0);
+                yield return new WaitForSeconds(0.01f);
 
                 if (!isPlaced)
                 {
