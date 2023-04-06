@@ -10970,7 +10970,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6453885237681173873}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
   m_Name: 
@@ -10998,7 +10998,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6453885237681173873}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
@@ -11399,6 +11399,7 @@ MonoBehaviour:
   Qs:
   - {fileID: 2844908170755200100, guid: 774df132544fe0048835a5936077aebf, type: 3}
   - {fileID: 5444650472433666262, guid: 38aee4528c51c944e95046a7080537c9, type: 3}
+  - {fileID: 1834597420177904448, guid: 3dd66ab00c40d1a499e1343b5c9cf0e7, type: 3}
   Buttons:
   - {fileID: 1878791846}
   - {fileID: 287170980}
@@ -11816,7 +11817,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3016816024030631730, guid: 774df132544fe0048835a5936077aebf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.121
+      value: 2.82
       objectReference: {fileID: 0}
     - target: {fileID: 3016816024030631730, guid: 774df132544fe0048835a5936077aebf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11846,12 +11847,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3646336776713260235, guid: 774df132544fe0048835a5936077aebf, type: 3}
+      propertyPath: hostTransform
+      value: 
+      objectReference: {fileID: 6544820825973730812}
+    - target: {fileID: 3646336776713260235, guid: 774df132544fe0048835a5936077aebf, type: 3}
+      propertyPath: constraintsManager
+      value: 
+      objectReference: {fileID: 4866026838559012686}
     - target: {fileID: 6282374831170047850, guid: 774df132544fe0048835a5936077aebf, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8467589106165388231, guid: 774df132544fe0048835a5936077aebf, type: 3}
+      propertyPath: hostTransform
+      value: 
+      objectReference: {fileID: 4002085216917060579}
+    - target: {fileID: 8467589106165388231, guid: 774df132544fe0048835a5936077aebf, type: 3}
+      propertyPath: constraintsManager
+      value: 
+      objectReference: {fileID: 3394814640569281666}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 774df132544fe0048835a5936077aebf, type: 3}
+--- !u!114 &3394814640569281666 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7457768579294201255, guid: 774df132544fe0048835a5936077aebf, type: 3}
+  m_PrefabInstance: {fileID: 5216185345087629605}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &4002085216917060579 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9217144000671453894, guid: 774df132544fe0048835a5936077aebf, type: 3}
+  m_PrefabInstance: {fileID: 5216185345087629605}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4866026838559012686 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 856815668305616491, guid: 774df132544fe0048835a5936077aebf, type: 3}
+  m_PrefabInstance: {fileID: 5216185345087629605}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &6544820825973730812 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1346650174137943257, guid: 774df132544fe0048835a5936077aebf, type: 3}
+  m_PrefabInstance: {fileID: 5216185345087629605}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7043206367683198487 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3016816024030631730, guid: 774df132544fe0048835a5936077aebf, type: 3}

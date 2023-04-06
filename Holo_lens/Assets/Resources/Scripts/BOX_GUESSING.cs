@@ -1,5 +1,6 @@
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.Utilities;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,12 @@ public class BOX_GUESSING : MonoBehaviour
 {
     public GameObject[] Qs;
     public GameObject[] Buttons;
-    int[] Anums = new int[5];
+    int[] Anums=new int[5];
     int Qnow;
     int Qnum;
     Vector3 QPos;
     GameObject AButton;
+    
 
     private void Start()
     {
@@ -25,16 +27,31 @@ public class BOX_GUESSING : MonoBehaviour
 
     private void Questioning()
     {
-        int s = Random.Range(0, Buttons.Length);
+        int loopNum = 0;
+        HashSet<int> uniqueValues = new HashSet<int>();
+        int s = UnityEngine.Random.Range(0, Buttons.Length);
         Qnum = findQ().GetComponentsInChildren<Transform>().Length - 1;
-        Anums[s] = Qnum;
+        while (uniqueValues.Count < Buttons.Length)
+        {
+            int r = UnityEngine.Random.Range(Qnum - 3, Qnum + 3);
+            if (r != Qnum && !uniqueValues.Contains(r))
+            {
+                uniqueValues.Add(r);
+            }
+            if (loopNum++ > 10000)
+            {
+                Debug.Log(loopNum);
+                throw new Exception("Infinite Loop");
+            }
+        }
+        int[] Anums = uniqueValues.ToArray();
+
         for (int i = 0; i < Anums.Length; i++)
         {
-            int r = Random.Range(Qnum - 3, Qnum + 3);
-            if (r != Qnum && !Anums.Contains(r))
-                Anums[i] = r;
-            else
-                i--;
+            int randomIndex = UnityEngine.Random.Range(0, Anums.Length);
+            int temp = Anums[i];
+            Anums[i] = Anums[randomIndex];
+            Anums[randomIndex] = temp;
         }
 
         for (int i = 0; i < Anums.Length; i++)
@@ -44,10 +61,10 @@ public class BOX_GUESSING : MonoBehaviour
 
         AButton = Buttons[s];
         AButton.GetComponent<ButtonConfigHelper>().MainLabelText = $"{Qnum}";
-        
+
         Debug.Log($"{Anums[0]}" + $"{Anums[1]}" + $"{Anums[2]}" + $"{Anums[3]}" + $"{Anums[4]}");
-        
-    }
+
+    } 
 
     public void HightlightAButton()
     {
@@ -61,7 +78,7 @@ public class BOX_GUESSING : MonoBehaviour
             go.GetComponent<Interactable>().OnClick.AddListener(HightlightAButton);
         }
     }
-
+     
     public void BringNextQ()
     {
         DestroyImmediate(findQ());
@@ -76,13 +93,17 @@ public class BOX_GUESSING : MonoBehaviour
 
     GameObject findQ()
     {
+        int loopNum = 0;
         GameObject targetQ = null;
         foreach (Transform child in transform)
-        {
+        { 
             if (child.GetComponent<BoxCollider>() != null)
                 targetQ = child.gameObject;
+            if (loopNum++ > 10000)
+                throw new Exception("Infinite Loop");
+
         }
-        return targetQ;
+         return targetQ;
     }
 
 
