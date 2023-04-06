@@ -1781,6 +1781,7 @@ GameObject:
   - component: {fileID: 543350197}
   - component: {fileID: 543350196}
   - component: {fileID: 543350195}
+  - component: {fileID: 908262145}
   m_Layer: 0
   m_Name: FrontPlate
   m_TagString: Untagged
@@ -1866,6 +1867,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36065390e01a3cd40b87e4bf4acd02f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &908262145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543350193}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa162a1be707e7f4bb2c94f4fd6df84f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: ad293dd4c6ffa3342a44d3ad57e40397, type: 2}
+  outlineWidth: 0.001
 --- !u!1 &550651499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3760,6 +3775,7 @@ GameObject:
   - component: {fileID: 914857541}
   - component: {fileID: 914857540}
   - component: {fileID: 914857539}
+  - component: {fileID: 1673611011}
   m_Layer: 0
   m_Name: FrontPlate
   m_TagString: Untagged
@@ -3845,6 +3861,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36065390e01a3cd40b87e4bf4acd02f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1673611011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914857537}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa162a1be707e7f4bb2c94f4fd6df84f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: ad293dd4c6ffa3342a44d3ad57e40397, type: 2}
+  outlineWidth: 0.001
 --- !u!1 &978695735
 GameObject:
   m_ObjectHideFlags: 0
@@ -4483,6 +4513,7 @@ GameObject:
   - component: {fileID: 1240431934}
   - component: {fileID: 1240431933}
   - component: {fileID: 1240431932}
+  - component: {fileID: 2128518254}
   m_Layer: 0
   m_Name: FrontPlate
   m_TagString: Untagged
@@ -4568,6 +4599,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36065390e01a3cd40b87e4bf4acd02f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2128518254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240431930}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa162a1be707e7f4bb2c94f4fd6df84f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: ad293dd4c6ffa3342a44d3ad57e40397, type: 2}
+  outlineWidth: 0.001
 --- !u!1 &1245822582
 GameObject:
   m_ObjectHideFlags: 0
@@ -6628,6 +6673,8 @@ GameObject:
   - component: {fileID: 1878791850}
   - component: {fileID: 1878791849}
   - component: {fileID: 1878791848}
+  - component: {fileID: 1168767486}
+  - component: {fileID: 1168767485}
   m_Layer: 0
   m_Name: Button1
   m_TagString: Untagged
@@ -7136,6 +7183,62 @@ MonoBehaviour:
   defaultButtonQuadMaterial: {fileID: 2100000, guid: fa419ab56051229449e3b813df8f295f, type: 2}
   iconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
   defaultIconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
+--- !u!23 &1168767486
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878791846}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1168767485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878791846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa162a1be707e7f4bb2c94f4fd6df84f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: ad293dd4c6ffa3342a44d3ad57e40397, type: 2}
+  outlineWidth: 1
 --- !u!1 &1892046528
 GameObject:
   m_ObjectHideFlags: 0
@@ -7723,6 +7826,7 @@ GameObject:
   - component: {fileID: 1961844325}
   - component: {fileID: 1961844324}
   - component: {fileID: 1961844323}
+  - component: {fileID: 1981550879}
   m_Layer: 0
   m_Name: FrontPlate
   m_TagString: Untagged
@@ -7808,6 +7912,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36065390e01a3cd40b87e4bf4acd02f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1981550879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961844321}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa162a1be707e7f4bb2c94f4fd6df84f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: ad293dd4c6ffa3342a44d3ad57e40397, type: 2}
+  outlineWidth: 0.001
 --- !u!1 &1978801965
 GameObject:
   m_ObjectHideFlags: 0
@@ -7851,6 +7969,7 @@ GameObject:
   - component: {fileID: 1997920268}
   - component: {fileID: 1997920267}
   - component: {fileID: 1997920266}
+  - component: {fileID: 909177868}
   m_Layer: 0
   m_Name: FrontPlate
   m_TagString: Untagged
@@ -7936,6 +8055,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36065390e01a3cd40b87e4bf4acd02f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &909177868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997920264}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa162a1be707e7f4bb2c94f4fd6df84f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: ad293dd4c6ffa3342a44d3ad57e40397, type: 2}
+  outlineWidth: 0.001
 --- !u!1 &2030367236
 GameObject:
   m_ObjectHideFlags: 0
@@ -11712,6 +11845,10 @@ PrefabInstance:
     - target: {fileID: 3016816024030631730, guid: 774df132544fe0048835a5936077aebf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282374831170047850, guid: 774df132544fe0048835a5936077aebf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 774df132544fe0048835a5936077aebf, type: 3}
