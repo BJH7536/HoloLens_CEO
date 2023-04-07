@@ -27,22 +27,16 @@ public class BOX_GUESSING : MonoBehaviour
 
     private void Questioning()
     {
-        int loopNum = 0;
         HashSet<int> uniqueValues = new HashSet<int>();
         int s = UnityEngine.Random.Range(0, Buttons.Length);
         Qnum = findQ().GetComponentsInChildren<Transform>().Length - 1;
+        uniqueValues.Add(Qnum);
         while (uniqueValues.Count < Buttons.Length)
         {
             int r = UnityEngine.Random.Range(Qnum - 3, Qnum + 3);
-            if (r != Qnum && !uniqueValues.Contains(r))
-            {
-                uniqueValues.Add(r);
-            }
-            if (loopNum++ > 10000)
-            {
-                Debug.Log(loopNum);
-                throw new Exception("Infinite Loop");
-            }
+           
+            uniqueValues.Add(r);
+            
         }
         int[] Anums = uniqueValues.ToArray();
 
@@ -57,10 +51,9 @@ public class BOX_GUESSING : MonoBehaviour
         for (int i = 0; i < Anums.Length; i++)
         {
             Buttons[i].GetComponent<ButtonConfigHelper>().MainLabelText = $"{Anums[i]}";
+            if (Anums[i] == Qnum)
+                AButton = Buttons[i];
         }
-
-        AButton = Buttons[s];
-        AButton.GetComponent<ButtonConfigHelper>().MainLabelText = $"{Qnum}";
 
         Debug.Log($"{Anums[0]}" + $"{Anums[1]}" + $"{Anums[2]}" + $"{Anums[3]}" + $"{Anums[4]}");
 
