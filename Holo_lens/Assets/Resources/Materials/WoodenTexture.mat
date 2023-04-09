@@ -14,8 +14,7 @@ Material:
   - _HOVER_LIGHT
   - _REFLECTIONS
   - _SPECULAR_HIGHLIGHTS
-  m_InvalidKeywords:
-  - _STENCIL
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -150,8 +149,8 @@ Material:
     - _SpecularHighlights: 1
     - _SphericalHarmonics: 0
     - _SrcBlend: 1
-    - _Stencil: 1
-    - _StencilComparison: 3
+    - _Stencil: 0
+    - _StencilComparison: 0
     - _StencilOperation: 0
     - _StencilReference: 1
     - _TriplanarMappingBlendSharpness: 4
