@@ -9,7 +9,6 @@ public class BOX_GUESSING : MonoBehaviour
 {
     public GameObject[] Qs;
     public GameObject[] Buttons;
-    int[] Anums = new int[5];
     int Qnow;
     int Qnum;
     Vector3 QPos;
@@ -25,6 +24,7 @@ public class BOX_GUESSING : MonoBehaviour
 
     private void Questioning()
     {
+        int[] Anums = new int[5];
         int s = Random.Range(0, Buttons.Length);
         Qnum = findQ().GetComponentsInChildren<Transform>().Length - 1;
         Anums[s] = Qnum;
