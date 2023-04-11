@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbe7d70b89f48f40be3192488695342, type: 3}
   m_Name: FigmaToolkitSettings
   m_EditorClassIdentifier: 
-  FigmaToken: figd_4svEQlz_T14n-K2G4c4k2gbrwJ3qU-KVyrZMfSMI
+  FigmaToken: 
   DefaultCustomMap: {fileID: 11400000, guid: a19511a29b2c2b048bbbbe6cd2cab910, type: 2}
