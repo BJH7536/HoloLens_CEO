@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WoodenTextureStencil
+  m_Name: WoodenTextureForTP
   m_Shader: {fileID: 4800000, guid: 5bdea20278144b11916d77503ba1467a, type: 3}
   m_ValidKeywords:
   - _BORDER_LIGHT
@@ -15,8 +15,7 @@ Material:
   - _HOVER_LIGHT
   - _REFLECTIONS
   - _SPECULAR_HIGHLIGHTS
-  m_InvalidKeywords:
-  - _STENCIL
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -86,11 +85,11 @@ Material:
     - _BorderLightOpaqueAlpha: 1
     - _BorderLightReplacesAlbedo: 0
     - _BorderLightUsesHoverColor: 0
-    - _BorderMinValue: 0.036
-    - _BorderWidth: 0.06
+    - _BorderMinValue: 0.05
+    - _BorderWidth: 0.039
     - _BumpScale: 1
     - _ClippingBorder: 0
-    - _ClippingBorderWidth: 0
+    - _ClippingBorderWidth: 0.025
     - _ColorWriteMask: 15
     - _CullMode: 2
     - _CustomMode: 0
@@ -98,7 +97,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DirectionalLight: 1
     - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.2
+    - _EdgeSmoothingValue: 0
     - _EnableChannelMap: 0
     - _EnableEmission: 0
     - _EnableHoverColorOverride: 0
@@ -146,16 +145,16 @@ Material:
     - _RoundCornerMargin: 0.01
     - _RoundCornerRadius: 0.25
     - _RoundCorners: 0
-    - _Smoothness: 1
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SphericalHarmonics: 0
     - _SrcBlend: 1
-    - _Stencil: 1
-    - _StencilComparison: 3
+    - _Stencil: 0
+    - _StencilComparison: 0
     - _StencilOperation: 0
     - _StencilReference: 1
-    - _TriplanarMappingBlendSharpness: 4
+    - _TriplanarMappingBlendSharpness: 1
     - _UVSec: 0
     - _VertexColors: 0
     - _VertexExtrusion: 0
