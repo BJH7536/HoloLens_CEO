@@ -153,7 +153,7 @@ namespace MRTK.Tutorials.GettingStarted
         /// <summary>
         ///     Checks the part's position and snaps/keeps it in place if the distance to target conditions are met.
         /// </summary>
-        private IEnumerator CheckPlacement()
+        public IEnumerator CheckPlacement()
         {
             while (true)
             {
