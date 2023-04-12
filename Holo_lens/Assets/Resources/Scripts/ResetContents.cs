@@ -8,6 +8,7 @@ public class ResetContents : MonoBehaviour
     public GameObject TargetContents;
     GameObject MyTargetContents;
     Transform TargetContentsParent;
+    Vector3 OriginPos;
 
     private void Start()
     {
@@ -16,14 +17,14 @@ public class ResetContents : MonoBehaviour
 
     private void Init()
     {
-        TargetContents = transform.parent.GetChild(0).gameObject;
         TargetContentsParent = TargetContents.transform.parent;
-
+        OriginPos = TargetContents.transform.position;
     }
     
     public void ResetContents_() // 대상 콘텐츠의 프리팹을 불러와 대체시킨다.
     {
         MyTargetContents = Managers.Resource.Instantiate(TargetContents.name, TargetContentsParent);
+        MyTargetContents.transform.position = OriginPos;
 
         DestroyImmediate(TargetContents);
         
