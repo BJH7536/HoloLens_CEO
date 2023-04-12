@@ -260,6 +260,7 @@ MonoBehaviour:
   locationToPlace: {fileID: 2552618985966516978}
   MinDistance: 0.001
   MaxDistance: 0.005
+  distance: 0
   isPlaced: 0
 --- !u!114 &8767738757280289702
 MonoBehaviour:
@@ -630,6 +631,7 @@ MonoBehaviour:
   locationToPlace: {fileID: 6672005908008418752}
   MinDistance: 0.001
   MaxDistance: 0.005
+  distance: 0
   isPlaced: 0
 --- !u!114 &2552618986051579168
 MonoBehaviour:
@@ -765,7 +767,7 @@ Transform:
   m_GameObject: {fileID: 3546861660333928045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.113, z: 0.352}
-  m_LocalScale: {x: 0.0624202, y: 0.0624202, z: 0.0624202}
+  m_LocalScale: {x: 0.038151965, y: 6.24202, z: 0.07659719}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6672005908008418752}
@@ -1249,6 +1251,7 @@ MonoBehaviour:
   locationToPlace: {fileID: 2552618987915283263}
   MinDistance: 0.001
   MaxDistance: 0.005
+  distance: 0
   isPlaced: 0
 --- !u!114 &6505746405105796836
 MonoBehaviour:

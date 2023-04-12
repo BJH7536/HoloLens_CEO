@@ -14,6 +14,8 @@ namespace MRTK.Tutorials.GettingStarted
         public float MinDistance = 0.001f;
         public float MaxDistance = 0.01f;
 
+        public float distance;
+
         private bool isPunEnabled;
         private bool shouldCheckPlacement;
 
@@ -37,6 +39,11 @@ namespace MRTK.Tutorials.GettingStarted
         public bool IsPunEnabled
         {
             set => isPunEnabled = value;
+        }
+
+        private void Update()
+        {
+            distance = (transform.position - locationToPlace.position).magnitude;
         }
 
         private void Start()
