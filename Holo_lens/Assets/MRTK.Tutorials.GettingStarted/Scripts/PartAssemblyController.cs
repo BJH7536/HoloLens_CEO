@@ -9,10 +9,10 @@ namespace MRTK.Tutorials.GettingStarted
     {
         public delegate void PartAssemblyControllerDelegate();
 
-        [SerializeField] private Transform locationToPlace = default;
+        [SerializeField] public Transform locationToPlace = default;
 
-        private const float MinDistance = 0.001f;
-        private const float MaxDistance = 0.01f;
+        public float MinDistance = 0.001f;
+        public float MaxDistance = 0.01f;
 
         private bool isPunEnabled;
         private bool shouldCheckPlacement;
