@@ -10,6 +10,7 @@ Material:
   m_Name: WoodenTextureStencil
   m_Shader: {fileID: 4800000, guid: 5bdea20278144b11916d77503ba1467a, type: 3}
   m_ValidKeywords:
+  - _BORDER_LIGHT
   - _DIRECTIONAL_LIGHT
   - _HOVER_LIGHT
   - _REFLECTIONS
@@ -17,7 +18,7 @@ Material:
   m_InvalidKeywords:
   - _STENCIL
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
   stringTagMap:
@@ -80,16 +81,16 @@ Material:
     - _AlbedoAssignedAtRuntime: 0
     - _BlendOp: 0
     - _BlendedClippingWidth: 1
-    - _BorderLight: 0
+    - _BorderLight: 1
     - _BorderLightOpaque: 0
     - _BorderLightOpaqueAlpha: 1
     - _BorderLightReplacesAlbedo: 0
     - _BorderLightUsesHoverColor: 0
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
+    - _BorderMinValue: 0.036
+    - _BorderWidth: 0.06
     - _BumpScale: 1
     - _ClippingBorder: 0
-    - _ClippingBorderWidth: 0.025
+    - _ClippingBorderWidth: 0
     - _ColorWriteMask: 15
     - _CullMode: 2
     - _CustomMode: 0
@@ -97,7 +98,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DirectionalLight: 1
     - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
+    - _EdgeSmoothingValue: 0.2
     - _EnableChannelMap: 0
     - _EnableEmission: 0
     - _EnableHoverColorOverride: 0
@@ -145,7 +146,7 @@ Material:
     - _RoundCornerMargin: 0.01
     - _RoundCornerRadius: 0.25
     - _RoundCorners: 0
-    - _Smoothness: 0.5
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SphericalHarmonics: 0
