@@ -6,7 +6,7 @@ public class ActivateMainMenu : MonoBehaviour
 {
     void Start()
     {
-        transform.position = new Vector3(-0.05f, -0.03f, 0.2f);
+        transform.position = new Vector3(-0.05f, -0.03f, 0.4f);
     }
 
 }
