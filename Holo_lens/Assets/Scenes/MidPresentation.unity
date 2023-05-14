@@ -855,6 +855,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8608869479383486817, guid: a7ff953b159e83848b87e8bf2103ee9b, type: 3}
+      propertyPath: m_text
+      value: "\uC7A5\uBCF4\uAE30\uCC3E\uAE30"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608869479678588071, guid: a7ff953b159e83848b87e8bf2103ee9b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8608869479682835228, guid: a7ff953b159e83848b87e8bf2103ee9b, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -910,6 +918,22 @@ PrefabInstance:
     - target: {fileID: 8608869480141927484, guid: a7ff953b159e83848b87e8bf2103ee9b, type: 3}
       propertyPath: m_Name
       value: MainMenu_UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608869481000794383, guid: a7ff953b159e83848b87e8bf2103ee9b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608869481422875864, guid: a7ff953b159e83848b87e8bf2103ee9b, type: 3}
+      propertyPath: iconSet
+      value: 
+      objectReference: {fileID: 11400000, guid: d4874b646ba528148ba091e6078e36de, type: 2}
+    - target: {fileID: 8608869481422875864, guid: a7ff953b159e83848b87e8bf2103ee9b, type: 3}
+      propertyPath: iconChar
+      value: 60369
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608869481422875864, guid: a7ff953b159e83848b87e8bf2103ee9b, type: 3}
+      propertyPath: iconStyle
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7ff953b159e83848b87e8bf2103ee9b, type: 3}
