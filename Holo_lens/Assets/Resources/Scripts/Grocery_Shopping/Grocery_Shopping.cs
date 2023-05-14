@@ -7,6 +7,21 @@ using UnityEngine;
 
 public class Grocery_Shopping : MonoBehaviour
 {
+    private static Grocery_Shopping instance;
+
+    private Grocery_Shopping() { }
+    public static Grocery_Shopping Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<Grocery_Shopping>();
+            }
+            return instance;
+        }
+    }
+
     //АЁАн
     public int tomatoPrice = 1000;
     public int applePrice = 500;

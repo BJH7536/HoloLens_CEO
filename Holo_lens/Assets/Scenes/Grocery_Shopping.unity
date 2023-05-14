@@ -616,7 +616,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5842451138683163673, guid: 0993ab7cb043fce4cad6b3c8e2e0c198, type: 3}
-      propertyPath: pay
+      propertyPath: paymentText
       value: 
       objectReference: {fileID: 1624278982}
     - target: {fileID: 5842451138683163678, guid: 0993ab7cb043fce4cad6b3c8e2e0c198, type: 3}

@@ -5,8 +5,8 @@ using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class Pay : MonoBehaviour
-{
-   
+{ 
+
     private int payment = 0;
     public TextMeshPro paymentText;
     public TextMeshPro pay;
@@ -91,18 +91,17 @@ public class Pay : MonoBehaviour
     // 지불한 금액을 계산하여 거스름 돈을 출력한다. 지불한 금액이 더 작으면 부족한 금액을 출력한다.
     public void PayMoney()
     {
-        Grocery_Shopping gs = GameObject.Find("Counter_Range").GetComponent<Grocery_Shopping>();
-
-        if (payment >=gs.totalPrice )
+        if (payment >= Grocery_Shopping.Instance.totalPrice)
         {
-           pay.text = "거스름 돈:" + (payment - gs.totalPrice).ToString("N0") + "원";
-           Instantiate(reset);
+           pay.text = "거스름 돈:" + (payment - Grocery_Shopping.Instance.totalPrice).ToString("N0") + "원";
+          
+           if(GameObject.Find(reset.name)==null)
+             Managers.Resource.Instantiate(reset);
+      
         }
         else
         {
-           Debug.Log(gs.totalPrice-payment);
-           
-           pay.text = (gs.totalPrice-payment).ToString("N0") + "원이 부족합니다.";
+           pay.text = (Grocery_Shopping.Instance.totalPrice-payment).ToString("N0") + "원이 부족합니다.";
         }
     }
 

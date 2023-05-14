@@ -158,6 +158,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tomatoPrice: 1000
   applePrice: 500
+  pizzaPrice: 8500
   totalPrice: 0
-  money: 10000
   totalPriceText: {fileID: 0}
