@@ -2067,6 +2067,7 @@ GameObject:
   - component: {fileID: 9000038002767869449}
   - component: {fileID: 7779646903996288490}
   - component: {fileID: 5916648253214611898}
+  - component: {fileID: 6364633803712295095}
   m_Layer: 0
   m_Name: BOX_GUESSING_Q4
   m_TagString: Untagged
@@ -2219,3 +2220,17 @@ MonoBehaviour:
   executionOrder: 0
   constraintOnRotation: 5
   useLocalSpaceForConstraint: 0
+--- !u!114 &6364633803712295095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8971090217942848251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc098eaa4d83b7e459b70c3e02884e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Max: 0
+  Min: 0

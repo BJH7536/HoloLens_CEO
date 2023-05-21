@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BackPlate
+  - Tomato
+  - Apple
+  - Money5000
+  - Money50000
+  - Money10000
+  - Money1000
+  - Money500
+  - Money100
+  - Pizza
   layers:
   - Default
   - TransparentFX
