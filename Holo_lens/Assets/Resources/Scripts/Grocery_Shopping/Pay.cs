@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -91,12 +92,37 @@ public class Pay : MonoBehaviour
     // 지불한 금액을 계산하여 거스름 돈을 출력한다. 지불한 금액이 더 작으면 부족한 금액을 출력한다.
     public void PayMoney()
     {
+        int change = payment - Grocery_Shopping.Instance.totalPrice;
         if (payment >= Grocery_Shopping.Instance.totalPrice)
         {
            pay.text = "거스름 돈:" + (payment - Grocery_Shopping.Instance.totalPrice).ToString("N0") + "원";
+
+           int[] moneyUnit = { 10000, 5000, 1000, 500, 100};
+           int[] count = new int[moneyUnit.Length];
+
+           for (int i = 0; i < moneyUnit.Length; i++)
+           {
+                if (change >= moneyUnit[i])
+                {
+                    count[i] = change / moneyUnit[i];
+                    change %= moneyUnit[i];
+                }
+           }
+           int j = 0;
+           string[] changeString = new string[moneyUnit.Length];
+           for (int i = 0; i < moneyUnit.Length; i++)
+           {
+                if (count[i] != 0)
+                    changeString[j++] = string.Format("{0}원 {1}개,", moneyUnit[i].ToString("N0"), count[i]);
+           }
+
+           string result = string.Join("",changeString);
+           
           
-           if(GameObject.Find(reset.name)==null)
-             Managers.Resource.Instantiate(reset);
+           pay.text = "거스름 돈:" +result;
+            
+           if (GameObject.Find(reset.name)==null)
+                Managers.Resource.Instantiate(reset);
       
         }
         else

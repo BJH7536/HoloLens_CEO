@@ -8,7 +8,13 @@ using UnityEngine;
 public class Grocery_Shopping : MonoBehaviour
 {
     private static Grocery_Shopping instance;
-
+    //가격
+    public int tomatoPrice = 1000;
+    public int applePrice = 500;
+    public int pizzaPrice = 8500;
+    public int totalPrice = 0;
+    public TextMeshPro totalPriceText;
+    public TextMeshPro question;
     private Grocery_Shopping() { }
     public static Grocery_Shopping Instance
     {
@@ -22,12 +28,12 @@ public class Grocery_Shopping : MonoBehaviour
         }
     }
 
-    //가격
-    public int tomatoPrice = 1000;
-    public int applePrice = 500;
-    public int pizzaPrice = 8500;
-    public int totalPrice = 0;
-    public TextMeshPro totalPriceText;
+    private void Start()
+    {
+        Question();
+    }
+
+
 
     // 계산대에 물건이 들어오면 가격을 더한다.
     private void OnTriggerEnter(Collider ob)
@@ -79,6 +85,34 @@ public class Grocery_Shopping : MonoBehaviour
     private void UpdateTotalPrice() 
     {
         totalPriceText.text = "가격:" + totalPrice.ToString("N0") + "원";
+    }
+    //구매해야할 물품을 랜덤으로 알려준다.
+    private void Quest()
+    {
+        string[] ob = { "사과", "바나나", "오렌지", "포도", "수박", "참외" };
+        int minCount = 1;
+        int maxCount = 5;
+
+        int obCount = UnityEngine.Random.Range(1, 4);
+        string[] selectedob = new string[obCount];
+
+        for (int i = 0; i < obCount; i++)
+        {
+            int index = UnityEngine.Random.Range(0, ob.Length);
+            selectedob[i] = ob[index];
+        }
+
+        string[] obstring = new string[obCount];
+        for (int i = 0; i < obCount; i++)
+        {
+            int count = UnityEngine.Random.Range(minCount, maxCount + 1);
+            obstring[i] = string.Format("{0}{1}개", selectedob[i], count);
+        }
+
+        string result = string.Join(",", obstring);
+        question.text = string.Format("{0}를 구매하세요", result);
+
+    
     }
 
 }
