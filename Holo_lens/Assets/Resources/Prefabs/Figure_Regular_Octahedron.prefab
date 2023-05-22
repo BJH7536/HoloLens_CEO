@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 5205559416432403398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.012, y: -0.229, z: 0.604}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.61121184, y: 100, z: 1.2271217}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5205559416893976002}
@@ -104,7 +104,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b127ac8bbc20e1449f17a86808fd436, type: 2}
+  - {fileID: 2100000, guid: 931c2614d7ef69b4d9ece79b2390d5c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -180,7 +180,7 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: 0
+    min: -122.89273
     max: 109
     bounciness: 0
     bounceMinVelocity: 0.2
@@ -357,7 +357,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b127ac8bbc20e1449f17a86808fd436, type: 2}
+  - {fileID: 2100000, guid: 931c2614d7ef69b4d9ece79b2390d5c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -433,7 +433,7 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: 0
+    min: -103.56686
     max: 109
     bounciness: 0
     bounceMinVelocity: 0.2
@@ -956,7 +956,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3d0cc8486243bd549aadf0534de21e95, type: 2}
+  - {fileID: 2100000, guid: 931c2614d7ef69b4d9ece79b2390d5c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1032,7 +1032,7 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: 0
+    min: -120.27551
     max: 109
     bounciness: 0
     bounceMinVelocity: 0.2
@@ -1215,7 +1215,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3d0cc8486243bd549aadf0534de21e95, type: 2}
+  - {fileID: 2100000, guid: 931c2614d7ef69b4d9ece79b2390d5c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1273,12 +1273,12 @@ HingeJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5205559417763798286}
-  m_ConnectedBody: {fileID: 0}
+  m_ConnectedBody: {fileID: 5205559417211013889}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -1.0000004, y: 0.00000023841858, z: -0.00000030223342}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1416,8 +1416,6 @@ GameObject:
   - component: {fileID: 5205559417784085002}
   - component: {fileID: 5205559417784085001}
   - component: {fileID: 5205559417784085000}
-  - component: {fileID: 5205559417784085007}
-  - component: {fileID: 5205559417784085006}
   - component: {fileID: 5205559418280492747}
   - component: {fileID: 5205559418280492740}
   - component: {fileID: 5205559418280492741}
@@ -1471,7 +1469,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b127ac8bbc20e1449f17a86808fd436, type: 2}
+  - {fileID: 2100000, guid: 931c2614d7ef69b4d9ece79b2390d5c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1547,8 +1545,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: 0
-    max: 109
+    min: -109.0568
+    max: 100.188934
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -1629,34 +1627,6 @@ MonoBehaviour:
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5205559417784085007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5205559417784085004}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64c13570ddb0c7d49a5579fec409b25b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  locationToPlace: {fileID: 5205559417076849678}
-  MinDistance: 0.001
-  MaxDistance: 0.01
-  isPlaced: 0
---- !u!114 &5205559417784085006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5205559417784085004}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f55236c2c128704eb452912dd5b23e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5205559418280492747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1771,7 +1741,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3d0cc8486243bd549aadf0534de21e95, type: 2}
+  - {fileID: 2100000, guid: 931c2614d7ef69b4d9ece79b2390d5c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1847,7 +1817,7 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: 0
+    min: -101.98901
     max: 109
     bounciness: 0
     bounceMinVelocity: 0.2
@@ -2024,7 +1994,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3d0cc8486243bd549aadf0534de21e95, type: 2}
+  - {fileID: 2100000, guid: 931c2614d7ef69b4d9ece79b2390d5c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2100,7 +2070,7 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: 0
+    min: -98.90015
     max: 105
     bounciness: 0
     bounceMinVelocity: 0.2
@@ -2847,7 +2817,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b127ac8bbc20e1449f17a86808fd436, type: 2}
+  - {fileID: 2100000, guid: 931c2614d7ef69b4d9ece79b2390d5c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
