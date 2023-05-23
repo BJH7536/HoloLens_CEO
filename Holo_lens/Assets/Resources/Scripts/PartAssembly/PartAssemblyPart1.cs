@@ -54,6 +54,8 @@ public class PartAssemblyPart1 : MonoBehaviour {
         }
     }
 
+
+
     private void OnCollisionStay(Collision collision)
     {
         if (isPlaced)
