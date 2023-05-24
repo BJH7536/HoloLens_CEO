@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 4888899262327619549}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.699, y: -0.043, z: 0.7571}
-  m_LocalScale: {x: 0.0001, y: 0.04670979, z: 0.09308726}
+  m_LocalScale: {x: 0.00012562999, y: 0.05868151, z: 0.11694553}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a7401c134fea4e25bfbe792e2ad5a61a, type: 2}
+  - {fileID: 2100000, guid: 7b908e4bc9a532546b231f115ebe2107, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,8 +115,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 346.32788, y: 1.1982458, z: 1.2034509}
-  m_Center: {x: -22.629753, y: -0.013445878, z: -0.02289582}
+  m_Size: {x: 138.09367, y: 1, z: 1}
+  m_Center: {x: -4.1293406, y: 0, z: 0}
 --- !u!114 &4888899262327619537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 4888899262327619536}
+  constraintsManager: {fileID: 4888899262327619536, guid: a6376afb4973a9b4ea025448dd914501, type: 3}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
