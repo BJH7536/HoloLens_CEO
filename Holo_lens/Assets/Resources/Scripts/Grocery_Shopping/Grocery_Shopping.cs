@@ -1,4 +1,5 @@
 using Microsoft.MixedReality.Toolkit.UI;
+using Microsoft.MixedReality.Toolkit.Utilities.FigmaImporter;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,6 +19,13 @@ public class Grocery_Shopping : MonoBehaviour
     public TextMeshPro totalPriceText;
     public TextMeshPro question;
     private Grocery_Shopping() { }
+    //가격
+    public int tomatoPrice = 1000;
+    public int applePrice = 500;
+    public int pizzaPrice = 8500;
+    public int totalPrice = 0;
+    public TextMeshPro totalPriceText;
+    public TextMeshPro question;
     public static Grocery_Shopping Instance
     {
         get
@@ -30,12 +38,20 @@ public class Grocery_Shopping : MonoBehaviour
         }
     }
 
+<<<<<<< Updated upstream
     private void Start()
     {
         Quest();
     }
 
 
+=======
+    void Start()
+    {
+       
+        Question();
+    }   
+>>>>>>> Stashed changes
 
     // 계산대에 물건이 들어오면 가격을 더한다.
     private void OnTriggerEnter(Collider ob)
@@ -151,4 +167,19 @@ public class Grocery_Shopping : MonoBehaviour
     
     }
 
+    private void Question()
+    {
+         string[] fruits = { "사과", "바나나", "오렌지", "포도", "수박", "참외" };
+         int minCount = 1;
+         int maxCount = 5;
+
+        
+        int[] randomIndex = new int[3];string fruit1 = fruits[UnityEngine.Random.Range(0, fruits.Length)];
+        string fruit2 = fruits[UnityEngine.Random.Range(0, fruits.Length)];
+        int count1 = UnityEngine.Random.Range(minCount, maxCount + 1);
+        int count2 = UnityEngine.Random.Range(minCount, maxCount + 1);
+
+        question.text =string.Format("{0}{1}개 {2}{3}개를 사세요", fruit1, count1, fruit2, count2);
+        
+    }
 }
