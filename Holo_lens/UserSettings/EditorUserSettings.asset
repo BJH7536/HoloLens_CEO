@@ -19,9 +19,10 @@ EditorUserSettings:
       flags: 0
 <<<<<<< Updated upstream
     RecentlyUsedSceneGuid-7:
-      value: 5206525e03000f5e095c5c2144770b44424f1b72787027657c2b1832bab7373b
+      value: 5408550301000c595b0c0d26477a0c4447164d7e7b2c2535782b4d35b2e4626f
       flags: 0
     RecentlyUsedSceneGuid-8:
+<<<<<<< HEAD
       value: 5408550301000c595b0c0d26477a0c4447164d7e7b2c2535782b4d35b2e4626f
 =======
     RecentlyUsedSceneGuid-4:
@@ -39,6 +40,9 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-8:
       value: 5453025051500a5e540d587541225944104e4d282d2d72662b7f446be3b66769
+=======
+      value: 5206525e03000f5e095c5c2144770b44424f1b72787027657c2b1832bab7373b
+>>>>>>> parent of e21c335 (Grocery_Shopping 최종본, 에셋 교체, Quest 중복 제거)
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 5457525554035b5f0f5a0d2441720a4442154d2f2f7a7567747b1961b2b46539

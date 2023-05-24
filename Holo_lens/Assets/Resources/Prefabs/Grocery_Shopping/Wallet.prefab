@@ -5136,7 +5136,7 @@ MonoBehaviour:
         m_MethodName: TakeOutMoney
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 238807680034564629, guid: a2f5f6267aed442478e432704da2c416, type: 3}
+          m_ObjectArgument: {fileID: 4888899262327619549, guid: 3392f3e66a6b04b4bac59fbaccd355a3, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -5691,7 +5691,7 @@ MonoBehaviour:
         m_MethodName: TakeOutMoney
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1221236512953239356, guid: 2edc54e0da8313b4b9c18568bdaab4a2, type: 3}
+          m_ObjectArgument: {fileID: 4888899262327619549, guid: aae93cbe58acd72498086baf3f9390c2, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0

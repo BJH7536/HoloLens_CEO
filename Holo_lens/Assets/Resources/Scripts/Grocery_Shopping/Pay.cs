@@ -95,31 +95,31 @@ public class Pay : MonoBehaviour
         int change = payment - Grocery_Shopping.Instance.totalPrice;
         if (payment >= Grocery_Shopping.Instance.totalPrice)
         {
-           int[] moneyUnit = { 50000, 10000, 5000, 1000, 500, 100};
+           pay.text = "거스름 돈:" + (payment - Grocery_Shopping.Instance.totalPrice).ToString("N0") + "원";
+
+           int[] moneyUnit = { 10000, 5000, 1000, 500, 100};
            int[] count = new int[moneyUnit.Length];
-           int changeNum = 0;
+
            for (int i = 0; i < moneyUnit.Length; i++)
            {
                 if (change >= moneyUnit[i])
                 {
                     count[i] = change / moneyUnit[i];
                     change %= moneyUnit[i];
-                    if (count[i] > 0)
-                        changeNum++;
                 }
            }
            int j = 0;
-           string[] changeString = new string[changeNum];
+           string[] changeString = new string[moneyUnit.Length];
            for (int i = 0; i < moneyUnit.Length; i++)
            {
                 if (count[i] != 0)
-                    changeString[j++] = string.Format("{0}원 {1}개", moneyUnit[i].ToString("N0"), count[i]);
+                    changeString[j++] = string.Format("{0}원 {1}개,", moneyUnit[i].ToString("N0"), count[i]);
            }
 
-           string result = string.Join(",",changeString);
+           string result = string.Join("",changeString);
            
           
-           pay.text = "거스름 돈:"+ (payment - Grocery_Shopping.Instance.totalPrice).ToString("N0")+"원\n"+result;
+           pay.text = "거스름 돈:" +result;
             
            if (GameObject.Find(reset.name)==null)
                 Managers.Resource.Instantiate(reset);
