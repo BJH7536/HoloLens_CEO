@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &510514002
 Transform:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 1756764281}
   - component: {fileID: 1756764280}
   m_Layer: 0
-  m_Name: MixedRealityToolkit
+  m_Name: MixedRealityToolkit (Inactive)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -498,9 +498,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1463280513}
     m_Modifications:
+    - target: {fileID: 1479423500798347765, guid: ed28db08dcd268d4e8362ae597a6fcf8, type: 3}
+      propertyPath: m_Limits.min
+      value: -114.002106
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991237951101443251, guid: ed28db08dcd268d4e8362ae597a6fcf8, type: 3}
+      propertyPath: m_Limits.min
+      value: -105.21472
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899950666853769782, guid: ed28db08dcd268d4e8362ae597a6fcf8, type: 3}
+      propertyPath: m_Limits.min
+      value: -103.399414
+      objectReference: {fileID: 0}
     - target: {fileID: 8412109995939724228, guid: ed28db08dcd268d4e8362ae597a6fcf8, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412109995939724228, guid: ed28db08dcd268d4e8362ae597a6fcf8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.049999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412109995939724228, guid: ed28db08dcd268d4e8362ae597a6fcf8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.049999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412109995939724228, guid: ed28db08dcd268d4e8362ae597a6fcf8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.049999997
       objectReference: {fileID: 0}
     - target: {fileID: 8412109995939724228, guid: ed28db08dcd268d4e8362ae597a6fcf8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -541,6 +565,10 @@ PrefabInstance:
     - target: {fileID: 8412109995939724228, guid: ed28db08dcd268d4e8362ae597a6fcf8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412109995939724228, guid: ed28db08dcd268d4e8362ae597a6fcf8, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9220559298437816702, guid: ed28db08dcd268d4e8362ae597a6fcf8, type: 3}
       propertyPath: m_Name
