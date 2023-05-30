@@ -17,7 +17,6 @@ public class makeTangent : MonoBehaviour
 
     public void maketangent()
     {
-        Debug.Log("Tangent Changed");
         points[1] = pointer.localPosition; 
         float leftx = pointer.localPosition.x - 0.2f;
         float rightx = pointer.localPosition.x + 0.2f;
