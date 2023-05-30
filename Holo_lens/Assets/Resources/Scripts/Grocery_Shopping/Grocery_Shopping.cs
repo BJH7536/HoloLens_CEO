@@ -1,5 +1,4 @@
 using Microsoft.MixedReality.Toolkit.UI;
-using Microsoft.MixedReality.Toolkit.Utilities.FigmaImporter;
 using System;
 using System.Collections;
 using System.Collections.Generic;
