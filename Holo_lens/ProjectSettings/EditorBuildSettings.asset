@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Grocery_Shopping.unity
-    guid: 7ff3162db4af11544b5ec23792d2041a
+    path: Assets/Scenes/Presentation.unity
+    guid: 7b664ece9c471af4f95bae46f698a631
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 18c5eeb0e41387c46ad32dc7649d62c5, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 567e6cfa88594b04fa08367656735877, type: 2}
