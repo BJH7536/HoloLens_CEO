@@ -833,7 +833,7 @@ PlayerSettings:
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
-  metroCertificateNotAfter: 00e71f114071da01
+  metroCertificateNotAfter: 807de5c0a0b1da01
   metroApplicationDescription: Template_3D
   wsaImages: {}
   metroTileShortName: Holo_lens
