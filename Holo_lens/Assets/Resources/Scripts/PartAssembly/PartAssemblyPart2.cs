@@ -47,11 +47,9 @@ public class PartAssemblyPart2 : MonoBehaviour
 
 
     }
-
-
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.gameObject.GetComponent<Collider>()==locationToPlace.GetComponent<Collider>())
+        if (collision.gameObject.GetComponent<Collider>() == locationToPlace.GetComponent<Collider>())
         {
             SetPlacement();
         }
@@ -59,13 +57,14 @@ public class PartAssemblyPart2 : MonoBehaviour
 
 
 
-    private void OnTriggerStay(Collider other)
+    private void OnCollisionStay(Collision collision)
     {
         if (isPlaced)
         {
             var trans = transform;
             trans.position = locationToPlace.position;
             trans.rotation = locationToPlace.rotation;
+
         }
     }
 
